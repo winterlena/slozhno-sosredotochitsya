@@ -259,7 +259,7 @@ a:focus-visible {
   }
 }
 
-@media (width < 375px) {
+@media (width <= 375px) {
   .header {
     min-height: 668px;
     padding: 10px;
