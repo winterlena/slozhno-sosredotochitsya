@@ -2,7 +2,8 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background: top / cover no-repeat fixed var(--background-image) var(--background-color);
+  background: var(--background-color) var(--background-image) fixed no-repeat top;
+  background-size: cover; 
 }
 
 .header {
@@ -221,7 +222,7 @@
 }
 
 .text__link {
-  text-shadow: var(--title-shadow) 1px 1px;
+  text-shadow: var(--bg-color) 1px 1px;
   text-decoration: none;
 }
 
