@@ -145,7 +145,6 @@
   color: var(--content-text-color);
   font-weight: 400;
   font-size: inherit;
-  /* margin-block-start: 10px; */
   margin-block-end: 20px;
 }
 
@@ -161,7 +160,7 @@
 
 .article > .header__subtitle-decor { 
   margin-block-end: 20px;
-} 
+}
 
 .content__images-table {
   display: grid;
@@ -303,13 +302,11 @@ a:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-block-start: 10px;
   }
   .section__division {
     grid-template-columns: 1fr;
     gap: 0;
-  }
-  .content__images-table {
-    margin-block-start: 10px;
   }
 }
 
