@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background: var(--background-color) var(--background-image) fixed no-repeat top;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .header {
