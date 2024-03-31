@@ -10,6 +10,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   min-height: 768px;
+  block-size: 100vh;
   padding: 20px;
   margin-block-end: 60px;
 }
@@ -209,6 +210,7 @@
   margin-block-start: 60px;
   padding: 20px;
   min-height: 768px;
+  block-size: 100vh;
 }
 
 .footer__title {
