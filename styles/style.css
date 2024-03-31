@@ -2,8 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background: no-repeat top / cover var(--background-image), var(--background-color);
-  background-attachment: fixed;
+  background: fixed no-repeat top / cover var(--background-image) var(--background-color);
 }
 
 .header {
@@ -233,7 +232,7 @@ a:focus-visible {
   outline: 1px solid var(--content-text-color);
 }
 
-@media (width < 1024px) {
+@media (max-width: 768px) {
   .header {
     min-height: 1024px;
   }
@@ -258,7 +257,7 @@ a:focus-visible {
   }
 }
 
-@media (width < 768px) {
+@media (max-width: 375px) {
   .header {
     min-height: 668px;
     padding: 10px;
