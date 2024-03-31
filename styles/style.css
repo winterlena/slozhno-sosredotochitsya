@@ -232,7 +232,7 @@ a:focus-visible {
   outline: 1px solid var(--content-text-color);
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
   .header {
     min-height: 1024px;
   }
@@ -257,7 +257,7 @@ a:focus-visible {
   }
 }
 
-@media (max-width: 375px) {
+@media (width < 375px) {
   .header {
     min-height: 668px;
     padding: 10px;
