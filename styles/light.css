@@ -19,6 +19,7 @@
   --content-title-color: #353430;
   --content-text-color: #353430;
   --rec-display: none;
+  --menu-color-hover: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
@@ -34,5 +35,6 @@
      --content-title-color: #353430;
      --content-text-color: #353430;
      --rec-display: none;
+     --menu-color-hover: rgba(50, 49, 45, 0.4);
     }
 }

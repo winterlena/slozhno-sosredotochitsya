@@ -4,6 +4,10 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background: var(--background-color) var(--background-image) fixed no-repeat top;
   background-size: cover;
+  font-family: 'IBM Plex mono', Courier, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
 }
 
 .header {
@@ -77,6 +81,8 @@
 }
 
 .header__theme-menu-button {
+  appearance: none;
+  line-height: 100%;
   background-color: transparent;
   color: var(--menu-color);
   text-transform: lowercase;
@@ -94,12 +100,17 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--menu-color);
+  border: 1px solid var(--menu-color-hover);
   outline: none;
 }
 
 .header__theme-menu-button_active {
   border: 1px solid var(--menu-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
 }
 
 .header__title {
@@ -108,7 +119,7 @@
   text-shadow: 4px 4px 0 var(--title-shadow);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   margin-inline-start: -20px;
-  line-height: 100%;
+  line-height: 95%;
 }
 
 .header__subtitle {
@@ -218,11 +229,11 @@
   color: var(--title-color);
   text-shadow: 2px 2px 0 var(--title-shadow);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: 100%;
+  line-height: 95%;
 }
 
 .text__link {
-  text-shadow: var(--bg-color) 1px 1px;
+  text-shadow: var(--bg-color) 2px 2px;
   text-decoration: none;
 }
 
@@ -239,21 +250,27 @@ a:focus-visible {
   .header {
     min-height: 1024px;
   }
+
   .footer {
     min-height: 1024px;
   }
+
   .header__theme-menu {
     align-self: center;
   }
+
   .header__theme-menu-list {
     flex-direction: column;
   }
+
   .header__subtitle {
     max-inline-size: 364px;
   }
+
   .content__section {
     gap: 20px;
   }
+
   .section__division:last-child {
     grid-template-columns: 1fr;
     gap: 0;
@@ -266,47 +283,59 @@ a:focus-visible {
     padding: 10px;
     margin-block-end: 40px;
   }
+
   .footer {
     min-height: 668px;
     margin-block-start: 40px;
   }
+
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
+
   .header__title {
     line-height: 82%;
     margin-inline-start: 0;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
+
   .header__subtitle {
     max-inline-size: 355px;
+    margin-block-end: 0;
   }
+
   .header__rec {
     top: 11px;
     right: 38px;
   }
+
   .decorated-zone::before {
     inset-block-start: 10px;
     inset-inline-end: 10px;
   }
+
   .decorated-zone::after {
     inset-block-end: 10px;
     inset-inline-start: 10px;
   } 
+
   .content {
     padding-inline: 10px;
     gap: 30px;
   }
+
   .content__section {
     grid-template-columns: 1fr;
     gap: 0;
   }
+
   .content__images-table {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-block-start: 10px;
   }
+
   .section__division {
     grid-template-columns: 1fr;
     gap: 0;

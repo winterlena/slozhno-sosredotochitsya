@@ -7,10 +7,6 @@
 }
 
 body {
-  font-family: IBM Plex mono, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 130%;
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
